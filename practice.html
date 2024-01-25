@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--CSS style in the same file-->
+<style>
+    .toUpperCase{
+        text-transform: uppercase;
+    }
+    .container{
+        padding: 40px;
+        background-color: #E8DAEF;
+    } 
+    .footer {
+        border-spacing: 10px;
+        width: 100%;
+        background-color: antiquewhite;
+    } 
+    #testingID{
+        border: 15px solid #A569BD;
+    }  
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +43,8 @@
 
     <img src="img/avatar.png" alt="Xeniee Image" width="480">
     
-    <!--Paragraphs-->
-    <div style="padding: 40px;">
+    <!--giving a div a class make the styling easier-->
+    <div class="container toUpperCase">
         <p>
             <span style="text-decoration: underline;"> ipsum dolor sit amet consectetur adipisicing elit. </span>
             Tenetur, harum doloremque. Quas soluta mollitia natus officiis veniam, distinctio enim incidunt reprehenderit
@@ -34,17 +54,8 @@
             Tenetur laudantium ab repudiandae laboriosam doloribus inventore consequatur animi commodi exercitationem eius.
             Autem quibusdam nobis dicta nihil! Amet neque numquam excepturi error.
         </p>
-        
-        <p>
-            ipsum dolor sit amet consectetur adipisicing elit. Tenetur, harum doloremque. Quas soluta mollitia natus officiis
-            veniam, distinctio enim incidunt reprehenderit
-            excepturi ad debitis, quo saepe quae nisi voluptate repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Perspiciatis ullam voluptates repudiandae sint hic quidem ipsam error libero similique aliquid cumque adipisci
-            quisquam placeat, amet dolores distinctio! Quae, ab amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Tenetur laudantium ab repudiandae laboriosam doloribus inventore consequatur animi commodi exercitationem eius.
-            Autem quibusdam nobis dicta nihil! Amet neque numquam excepturi error.
-        </p>
-        
+    </div>
+    <div id="testingID">  
         <p>
             ipsum dolor sit amet consectetur adipisicing elit. Tenetur, harum doloremque. Quas soluta mollitia natus officiis
             veniam, distinctio enim incidunt reprehenderit
@@ -55,10 +66,22 @@
             Autem quibusdam nobis dicta nihil! Amet neque numquam excepturi error.
         </p>
     </div>
-<hr />
+    <div class="container">
+        <p>
+            ipsum dolor sit amet consectetur adipisicing elit. Tenetur, harum doloremque. Quas soluta mollitia natus officiis
+            veniam, distinctio enim incidunt reprehenderit
+            excepturi ad debitis, quo saepe quae nisi voluptate repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Perspiciatis ullam voluptates repudiandae sint hic quidem ipsam error libero similique aliquid cumque adipisci
+            quisquam placeat, amet dolores distinctio! Quae, ab amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Tenetur laudantium ab repudiandae laboriosam doloribus inventore consequatur animi commodi exercitationem eius.
+            Autem quibusdam nobis dicta nihil! Amet neque numquam excepturi error.
+        </p>
+    </div>
+<hr/>
 
     <!--Table practice-->
     <div>
+        <p class="toUpperCase">Table Practice</p>
         <table border="1" width="100%">
             <tbody>
                 <!--tr is row, td is the column, colspan = merge cells column, rowspan = rows-->
@@ -77,6 +100,20 @@
         </table>
     </div>
 
+    <!-- Inner Table Content End -->
+
+    <!--Code formatting (pre: preformatted text)-->
+    <h3>Format Code</h3>
+    <pre>
+        <!--Html entity &lt; for [<,>]-->
+        Some     stuff   here  &lt;b&gt; This is bold &lt;/b&gt;
+        Second   line    here
+    </pre>
+    <!--Pre is whitespace sensitive, code is not-->
+    <p>
+        <code>Lorem ipsum dolor sit amet consectetur adipisicing elit.</code> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis fugit, architecto quisquam vitae impedit corporis qui magni, accusamus ad reprehenderit pariatur eius animi saepe delectus repudiandae odit incidunt necessitatibus.
+    </p>
+
     <!--Internal link to go back to the top-->
     <div id="bottom">
         <a href="#top">
@@ -86,7 +123,7 @@
 
     <!--This is the social media icons of the site-->
     <div>
-        <table border="0" width="100%" style="background-color: antiquewhite;">
+        <table class="footer">
             <tbody>
                 <tr>
                     <!--Table header, it is centered and bold-->
@@ -100,6 +137,11 @@
                     <a href="https://www.linkedin.com/in/xeniorita-alondra-bio/" target="_blank">
                         <img src="img/linkedin-logo.png" alt="linkedin link" width="50">
                     </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                    Xeniorita Alondra <sup>&copy;</sup> 2023
                     </th>
                 </tr>
             </tbody>
