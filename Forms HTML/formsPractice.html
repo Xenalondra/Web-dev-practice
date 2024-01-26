@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing Forms</title>
+</head>
+<body>
+    <h1>Practicing Forms</h1>
+    <form action="../Basic HTML/practice.html" method="get">
+        <!--Text field, input-->
+        <div>
+            <input required name="txt_name" type="text" placeholder="Enter your name">
+        </div>
+        <div>
+            <input required name="txt_email" type="email" placeholder="Enter your email">
+        </div>
+       <div>
+            <input required name="pbox_password" type="password" placeholder="Enter your password">
+       </div>
+       <div>
+        <select required name="cbx_option">
+            <option value="Value1">Option 1</option>
+            <option value="Value2">Option 2</option>
+            <option value="default-is-selected" selected="selected">Selected by default</option>
+            <option value="" disabled="disabled">- Disabled -</option>
+        </select>
+       </div>
+       <div>
+            <!--Text area, values are in between opening and closing tags-->
+            <textarea required cols="30" rows="5" placeholder="Enter your address"></textarea>
+       </div>
+        <div>
+            <button type="button">Click Me</button>
+            <button type="reset">Clear Fields</button>
+            <button type="submit">Submit</button>
+        </div>
+        
+    </form>
+</body>
+</html>
