@@ -4,38 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practicing Forms</title>
+
+    <style>
+        a:link, a:visited{
+            background-color: transparent;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        button{
+            padding: 5px 15px;
+            color: black;
+            text-align: center;
+        }
+
+        button:hover{
+            background-color: violet;
+            border-color: white;
+            border: 0;
+        }
+        table{
+            padding: 30px;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>Practicing Forms</h1>
-    <form action="../Basic HTML/practice.html" method="get">
-        <!--Text field, input-->
-        <div>
-            <input required name="txt_name" type="text" placeholder="Enter your name">
-        </div>
-        <div>
-            <input required name="txt_email" type="email" placeholder="Enter your email">
-        </div>
-       <div>
-            <input required name="pbox_password" type="password" placeholder="Enter your password">
-       </div>
-       <div>
-        <select required name="cbx_option">
-            <option value="Value1">Option 1</option>
-            <option value="Value2">Option 2</option>
-            <option value="default-is-selected" selected="selected">Selected by default</option>
-            <option value="" disabled="disabled">- Disabled -</option>
-        </select>
-       </div>
-       <div>
-            <!--Text area, values are in between opening and closing tags-->
-            <textarea required cols="30" rows="5" placeholder="Enter your address"></textarea>
-       </div>
-        <div>
-            <button type="button">Click Me</button>
-            <button type="reset">Clear Fields</button>
-            <button type="submit">Submit</button>
-        </div>
-        
-    </form>
+    <center>
+        <h1>Practicing Forms</h1>
+        <table cellspacing="10">
+            <form action="../Basic HTML/practice.html" method="get">
+                <!--Text field, input-->
+                <tr>
+                    <td><input required name="txt_name" type="text" placeholder="Enter your name" size="50"></td>
+                </tr>
+                <!--Text field, email (with validation)-->
+                <tr>
+                    <td><input required name="txt_email" type="email" placeholder="Enter your email" size="50"></td>
+                </tr>
+                <!--Password Box-->
+                <tr>
+                    <td>
+                        <input required name="pbox_password" type="password" placeholder="Enter your password" size="50" maxlength="20">
+                    </td>
+                </tr>
+                <!--Radio buttons Sample-->
+                <tr>
+                    <td>
+                        Status:
+                        <input class="choi" type="radio" name="status" value="single">Single
+                        <input class="choi" type="radio" name="status" value="married">Married
+                        <input class="choi" type="radio" name="status" value="widow">Widow
+                        <input class="choi" type="radio" name="status" value="sep">Separated
+                    </td>
+                </tr>
+                <!--Combobox sample-->
+                <tr>
+                    <td>
+                        <select required name="cbx_option" width="50">
+                            <option value="Value1">Option 1</option>
+                            <option value="Value2">Option 2</option>
+                            <option value="default-is-selected" selected="selected">Selected by default</option>
+                            <option value="" disabled="disabled">- Disabled -</option>
+                        </select>
+                    </td>
+                </tr>
+                <!--Text area, values are in between opening and closing tags-->
+                <tr>
+                    <td>
+                        <textarea required cols="50" rows="5" placeholder="Enter your address" size="50"></textarea>
+                    </td>
+                </tr>
+                <!--Buttons Samples-->
+                <tr>
+                    <center>
+                        <table>
+                            <tr>
+                                <td><button type="button">Click Me</button></td>
+                                <td><button type="reset">Clear Fields</button></td>
+                                <td>
+                                    <button type="submit">
+                                        <a href="mailto:xenioritaalondrabio@gmail.com">Submit</a>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                </tr>
+            </form>
+        </table>
+    </center>
 </body>
 </html>
