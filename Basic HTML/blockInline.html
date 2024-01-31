@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Inline</title>
+    <link rel="shortcut icon" href="../img/x-logo.png">
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        section {
+            display: block;
+            /*padding: top, right, left, bottom*/
+            padding-top: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 0px;
+        }
+
+        .navbar {
+            background-color: #333333;
+            list-style-type: none;
+            margin-top: 0px;
+            width: 100%;
+            overflow: hidden;
+            padding: 0;
+            position: fixed;
+        }
+
+        .navbar li {
+            float: right;
+            margin-right: 25px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            display: block;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .navbar li a:hover {
+            background-color: #BB8FCE;
+        }
+
+        .webname {
+            position: fixed;
+            margin-left: 100px;
+            float: left;
+            color: white;
+            font-size: large;
+            display: block;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .icon {
+            position: fixed;
+            margin-left: 50px;
+            padding-top: 5px;
+            display: block;
+            text-align: center;
+        }
+
+        .london {
+            background-color: #ABEBC6;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 25px;
+        }
+
+        .centered {
+            margin: auto;
+            width: 300px;
+            background-color: #F9E79F;
+            padding: 10px;
+        }
+
+        .div_float {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .div_float div {
+            width: 31%;
+            float: left;
+            padding-left: 20px;
+        }
+
+        .div_inline div {
+            width: 31%;
+            display: inline-block;
+            padding-left: 20px;
+            margin-left: 8px;
+        }
+
+        .div_flex {
+            display: flex;
+        }
+
+        .div_flex div {
+            width: 33%;
+            padding-left: 20px;
+        }
+
+        .div_grid {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            margin-left: 15px;
+        }
+
+        .div_grid div {
+            padding-left: 20px;
+        }
+
+        /* Footer style */
+        .footer_table {
+            border-bottom: #333333;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #D2B4DE;
+            table-layout: auto;
+        }
+
+        .mylogo {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .mylogo h3 {
+            margin-top: 5px;
+        }
+
+        .footer_table ul {
+            list-style-type: none;
+            margin-top: 0;
+        }
+
+        .socials a {
+            text-decoration: none;
+        }
+    </style>
+
+    <header>
+        <!--Navigation bar-->
+        <nav>
+            <ul class="navbar">
+                <li><a href="#div_grid">Grid</a></li>
+                <li><a href="#div_flex">Flex</a></li>
+                <li><a href="#div_inline">Inline-block</a></li>
+                <li><a href="#div_float">Float</a></li>
+                <li><a href="#div_multiple">Multiple</a></li>
+                <li><a href="#div_centered">Centered</a></li>
+                <li><a href="#block">Home</a></li>
+                <li class="webname">Xeniex Website</li>
+                <li class="icon"><img src="../img/x-logo.png" alt="logo" width="50px" /></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+
+<body>
+    <section id="block">
+        <h1>HTML Block and Inline Elements</h1>
+        <div>
+            <!--  &lt; is for "<" &gt; is for ">"-->
+            <p>
+                The &lt;p&gt; element defines a paragraph in an HTML document.
+            </p>
+            <div>
+                The &lt;div&gt; element defines a division or a section in an HTML document.
+            </div>
+        </div>
+        <hr>
+        <div class="london">
+            <h3>London</h3>
+            <p> London, the capital of England and the United Kingdom, is a 21st-century city with history stretching
+                back to Roman times. London got its name from the Romans, who named it Londinium when they established a
+                settlement here in AD 43. It is the most populous city in the United Kingdom, with a metropolitan area
+                of over 13 million inhabitants.</p>
+        </div>
+
+        <h2>Using &lt;span&gt; Element</h2>
+        <div>
+            <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has
+                <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.
+            </p>
+        </div>
+    </section>
+    <hr>
+    <section id="div_centered">
+        <h2>Center align a &lt;div&gt; element</h2>
+        <div class="centered">
+            <h3>London</h3>
+            <p>London is considered a forest.</p>
+            <p>There are over 170 museums in London</p>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+    </section>
+
+    <section id="div_multiple">
+        <h2>Multiple &lt;div&gt; Elements</h2>
+        <div style="background-color:#C39BD3;">
+            <h2>London</h2>
+            <p>London is considered a forest.</p>
+            <p>There are over 170 museums in London</p>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+
+        <div style="background-color:#F9E79F;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+            <p>Oslo residents are Norway’s healthiest</p>
+            <p>The city used to be called Christiania</p>
+        </div>
+
+        <div style="background-color:#17A589;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+            <p>Modern Rome more than 900 churches.</p>
+            <p>Rome had an advanced water supply system</p>
+        </div>
+    </section>
+
+    <section id="div_float">
+        <h2>Aligning a &lt;div&gt; elements side by side: Float</h2>
+        <div class="div_float">
+            <div style="background-color:#A9CCE3;">
+                <h2>London</h2>
+                <p>London is considered a forest.</p>
+                <p>There are over 170 museums in London</p>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#AED6F1;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+                <p>Oslo residents are Norway’s healthiest</p>
+                <p>The city used to be called Christiania</p>
+            </div>
+
+            <div style="background-color:#C39BD3;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+                <p>Modern Rome more than 900 churches.</p>
+                <p>Rome had an advanced water supply system</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="div_inline">
+        <h2>Aligning a &lt;div&gt; elements side by side: Inline-block</h2>
+        <div class="div_inline">
+            <div style="background-color:#FCF3CF;">
+                <h2>London</h2>
+                <p>London is considered a forest.</p>
+                <p>There are over 170 museums in London</p>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#D5F5E3 ;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+                <p>Oslo residents are Norway’s healthiest</p>
+                <p>The city used to be called Christiania</p>
+            </div>
+
+            <div style="background-color:#F5CBA7;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+                <p>Modern Rome more than 900 churches.</p>
+                <p>Rome had an advanced water supply system</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="div_flex">
+        <h2>Aligning a &lt;div&gt; elements side by side: Flex</h2>
+        <div class="div_flex">
+            <div style="background-color:#FAE5D3;">
+                <h2>London</h2>
+                <p>London is considered a forest.</p>
+                <p>There are over 170 museums in London</p>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#FEF5E7 ;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+                <p>Oslo residents are Norway’s healthiest</p>
+                <p>The city used to be called Christiania</p>
+            </div>
+
+            <div style="background-color:#FCF3CF;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+                <p>Modern Rome more than 900 churches.</p>
+                <p>Rome had an advanced water supply system</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="div_grid">
+        <h2>Aligning a &lt;div&gt; elements side by side: Grid</h2>
+        <div class="div_grid">
+            <div style="background-color:#EAF2F8;">
+                <h2>London</h2>
+                <p>London is considered a forest.</p>
+                <p>There are over 170 museums in London</p>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+            <div style="background-color:#F5EEF8 ;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+                <p>Oslo residents are Norway’s healthiest</p>
+                <p>The city used to be called Christiania</p>
+            </div>
+
+            <div style="background-color:#FDEDEC;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+                <p>Modern Rome more than 900 churches.</p>
+                <p>Rome had an advanced water supply system</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <br><br><br>
+
+    <footer>
+        <table class="footer_table">
+            <tr>
+                <td class="mylogo">
+                    <img src="../img/x-logo.png" alt="logo" width="150px">
+                    <h3>Xenieex Website</h3>
+                </td>
+                <td>
+                    <ul>
+                        <h3>Topics Covered</h3>
+                        <li>HTML Block and Inline</li>
+                        <li>HTML DIV</li>
+                        <li>HTML DIV Alignment</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <h3>Contact</h3>
+                        <li>0991******* (ph)</li>
+                        <li>0950******* (ph)</li>
+                        <li>example@gmail.com</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <h3>Address</h3>
+                        <li>Street Address</li>
+                        <li>Baranggay Address</li>
+                        <li>City, Philippines</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="socials">
+                <th colspan="4">
+                    <!--Image for footer-->
+                    <a href="https://www.facebook.com/Xeniorita31/" target="_blank">
+                        <img src="../img/fb-logo.png" alt="facebook link" width="30">
+                    </a>
+                    <a href="https://github.com/Xenalondra" target="_blank">
+                        <img src="../img/github.png" alt="github link" width="30">
+                    </a>
+                    <a href="https://www.linkedin.com/in/xeniorita-alondra-bio/" target="_blank">
+                        <img src="../img/linkedin-logo.png" alt="linkedin link" width="30">
+                    </a>
+                    <p>Xenieex <sup>&copy;</sup> 2024</p>
+                </th>
+            </tr>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
