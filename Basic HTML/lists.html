@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing Lists</title>
+    <link rel="shortcut icon" href="../img/x-logo.png">
+
+    <style>
+        /*Set the margin and padding to zero to change the default value of HTML*/
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .list,
+        .unordered,
+        .ordered {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-collapse: collapse;
+        }
+
+        h5 {
+            margin-bottom: 2px;
+            margin-top: 2px;
+        }
+
+        .list td,
+        .list th {
+            text-align: left;
+            vertical-align: text-top;
+            border: 1px solid #dddddd;
+            padding: 8px;
+        }
+
+        .unordered td,
+        .unordered th,
+        .ordered td,
+        .ordered th {
+            border: 1px solid #dddddd;
+            padding: 8px;
+        }
+
+        /*Style for the navigation bar*/
+        .nav_list {
+            list-style-type: none;
+            margin-top: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        .nav_list li {
+            margin-left: 10px;
+            float: left;
+        }
+
+        .nav_list li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        header {
+            padding: 30px 0;
+        }
+
+        nav {
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            position: fixed;
+        }
+
+        .nav_list li a:hover {
+            background-color: #BB8FCE;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Navigation Bar using horizontal list-->
+
+    <header>
+        <nav>
+            <ul class="nav_list">
+                <li><a href="#Types_of_List">Home</a></li>
+                <li><a href="#unordered_list">Unordered List</a></li>
+                <li><a href="#nested_list">Nested List</a></li>
+                <li><a href="#ordered_list">Ordered List</a></li>
+                <li><a href="#other_list">Other List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <center>
+        <section id="Types_of_List">
+
+            <h1>PRACTICING LISTS (HTML)</h1>
+
+            <h3>HTML LIST</h3>
+            <h4>HTML lists allow web developers to group a set of related items in lists.</h4>
+            <table class="list">
+                <tr>
+                    <th>Ordered and Unordered List</th>
+                    <th>Description List</th>
+                </tr>
+                <tr>
+                    <td width="30%">
+                        <!--Ordered List-->
+                        <ol>
+                            <h5>Best 10 KDRAMA of 2023</h5>
+                            <li>Moving</li>
+                            <li>Twinkling Watermelon</li>
+                            <li>Crash Course in Romance</li>
+                            <li>The Good Bad Mother</li>
+                            <li>The Glory</li>
+                            <li>Gyeongseong Creature</li>
+                            <li>Revenant</li>
+                            <li>My demon</li>
+                            <li>King the land</li>
+                            <li>Celebrity</li>
+                        </ol>
+
+                        <!--Unordered List-->
+                        <ul>
+                            <h5>Currently streaming Kdrama (2024)</h5>
+                            <li>A Shop For Killers</li>
+                            <li>Marry My Husband</li>
+                            <li>Doctor Slump</li>
+                            <li>A Killer Paradox</li>
+                            <li>Captivating The King (Sejak)</li>
+                            <li>Flex X Cop</li>
+                            <li>LTNS</li>
+                            <li>Love Song For Illusion</li>
+                            <li>The Bequeathed</li>
+                            <li>Although I Am Not A Hero</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <!--Description List-->
+                        <dl>
+                            <h5>Upcoming Kdrama 2024</h5>
+                            <dt><b>Queen of Divorce</b></dt>
+                            <dd>follows the story of Sara Kim (Lee Ji Ah), Korea’s greatest divorce problem solver, and
+                                her
+                                business partner Dong Ki
+                                Joon (Kang Ki Young), an eccentric lawyer, as they fearlessly bring justice to “bad
+                                spouses”
+                                with their solutions.
+                            </dd>
+                            <dt><b>Wonderful World</b></dt>
+                            <dd>Upcoming MBC drama that follows the story of Eun Soo-Hyun (Kim Nam-Joo), who uncovers
+                                the
+                                mystery surrounding her son’s
+                                death.
+                            </dd>
+                            <dt><b>Connection</b></dt>
+                            <dd>A crime investigation thriller K-drama that follows the story of two friends
+                                investigating
+                                their friend’s death. This
+                                friend from high school leaves around KRW 5 billion in insurance.
+                            </dd>
+                            <dt><b>Nine Puzzle</b></dt>
+                            <dd>The series follows the story of a woman, Yi-Na (Kim Da-Mi), who was the only one to
+                                witness
+                                her uncle’s death when she
+                                was a child. She meets Detective Han-Saem (Son Suk-Ku) while working as a criminal
+                                profiler
+                                10 years later. He suspects
+                                her of killing her uncle.
+                            </dd>
+                            <dt><b>Hong Rang</b></dt>
+                            <dd>An upcoming Korean period thriller series set to release on Netflix. It follows the
+                                story of
+                                a wealthy merchant family
+                                in the Joseon Era. The series will document the story of a brother, Hong Rang (Lee
+                                Jae-Wook), who suddenly disappears and returns home
+                                after 10 years without any memory of his childhood.
+                            </dd>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="unordered_list">
+            <h3>Unordered HTML List - Choose List Item Marker</h3>
+            <table class="unordered">
+                <tr>
+                    <th>Disc</th>
+                    <th>Circle</th>
+                    <th>Square</th>
+                    <th>None</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul style="list-style-type:disc;">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            <li>MilkTea</li>
+                            <li>Softdrinks</li>
+                            <li>Alcohol</li>
+                            <li>Water</li>
+                            <li>Wine</li>
+                            <li>Whisky</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul style="list-style-type:circle;">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            <li>MilkTea</li>
+                            <li>Softdrinks</li>
+                            <li>Alcohol</li>
+                            <li>Water</li>
+                            <li>Wine</li>
+                            <li>Whisky</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul style="list-style-type:square;">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            <li>MilkTea</li>
+                            <li>Softdrinks</li>
+                            <li>Alcohol</li>
+                            <li>Water</li>
+                            <li>Wine</li>
+                            <li>Whisky</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul style="list-style-type:none;">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            <li>MilkTea</li>
+                            <li>Softdrinks</li>
+                            <li>Alcohol</li>
+                            <li>Water</li>
+                            <li>Wine</li>
+                            <li>Whisky</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="nested_list">
+            <table class="nested">
+                <tr>
+                    <th>
+                        <h3>Nested HTML Lists</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Coffee
+                                <ul>
+                                    <li>Espresso</li>
+                                    <li>Latte/Iced Latte</li>
+                                    <li>Black Coffee</li>
+                                    <li>Mocha</li>
+                                    <li>Americano</li>
+                                    <li>Cappuccino</li>
+                                    <li>Flat White</li>
+                                    <li>Macchiato</li>
+                                    <li>Frappe</li>
+                                </ul>
+                            </li>
+
+                            <li>Tea
+                                <ul>
+                                    <li>Black tea</li>
+                                    <li>Green tea</li>
+                                    <li>White tea</li>
+                                    <li>Flavoured tea</li>
+                                </ul>
+                            </li>
+                            <li>Milk
+                                <ul>
+                                    <li>Cow's Milk</li>
+                                    <li>Soy Milk</li>
+                                    <li>Coconut Milk</li>
+                                    <li>Almond Milk</li>
+                                    <li>Oat Milk</li>
+                                    <li>Hemp Milk</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="ordered_list">
+            <h3>Ordered HTML List - The Type Attribute</h3>
+            <table class="ordered">
+                <tr>
+                    <th>type="1"</th>
+                    <th>type="A"</th>
+                    <th>type="a"</th>
+                    <th>type="I"</th>
+                    <th>type="i"</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ol type="1">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            <li>MilkTea</li>
+                            <li>Softdrinks</li>
+                            <li>Alcohol</li>
+                            <li>Water</li>
+                            <li>Wine</li>
+                            <li>Whisky</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol type="A">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            <li>MilkTea</li>
+                            <li>Softdrinks</li>
+                            <li>Alcohol</li>
+                            <li>Water</li>
+                            <li>Wine</li>
+                            <li>Whisky</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol type="a">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            <li>MilkTea</li>
+                            <li>Softdrinks</li>
+                            <li>Alcohol</li>
+                            <li>Water</li>
+                            <li>Wine</li>
+                            <li>Whisky</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol type="I">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            <li>MilkTea</li>
+                            <li>Softdrinks</li>
+                            <li>Alcohol</li>
+                            <li>Water</li>
+                            <li>Wine</li>
+                            <li>Whisky</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol type="i">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            <li>MilkTea</li>
+                            <li>Softdrinks</li>
+                            <li>Alcohol</li>
+                            <li>Water</li>
+                            <li>Wine</li>
+                            <li>Whisky</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="other_list">
+            <h3>HTML Description Lists</h3>
+            <table class="ordered">
+                <tr>
+                    <td>
+                        <!--Description List-->
+                        <dl>
+                            <h3>Upcoming Kdrama 2024</h3>
+                            <dt><b>Queen of Divorce</b></dt>
+                            <dd>follows the story of Sara Kim (Lee Ji Ah), Korea’s greatest divorce problem solver, and
+                                her
+                                business partner Dong Ki
+                                Joon (Kang Ki Young), an eccentric lawyer, as they fearlessly bring justice to “bad
+                                spouses”
+                                with their solutions.
+                            </dd>
+                            <dt><b>Wonderful World</b></dt>
+                            <dd>Upcoming MBC drama that follows the story of Eun Soo-Hyun (Kim Nam-Joo), who uncovers
+                                the
+                                mystery surrounding her son’s
+                                death.
+                            </dd>
+                            <dt><b>Connection</b></dt>
+                            <dd>A crime investigation thriller K-drama that follows the story of two friends
+                                investigating
+                                their friend’s death. This
+                                friend from high school leaves around KRW 5 billion in insurance.
+                            </dd>
+                            <dt><b>Nine Puzzle</b></dt>
+                            <dd>The series follows the story of a woman, Yi-Na (Kim Da-Mi), who was the only one to
+                                witness
+                                her uncle’s death when she
+                                was a child. She meets Detective Han-Saem (Son Suk-Ku) while working as a criminal
+                                profiler
+                                10 years later. He suspects
+                                her of killing her uncle.
+                            </dd>
+                            <dt><b>Hong Rang</b></dt>
+                            <dd>An upcoming Korean period thriller series set to release on Netflix. It follows the
+                                story of
+                                a wealthy merchant family
+                                in the Joseon Era. The series will document the story of a brother, Hong Rang (Lee
+                                Jae-Wook), who suddenly disappears and returns home
+                                after 10 years without any memory of his childhood.
+                            </dd>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <br><br>
+        <hr>
+    </center>
+</body>
+
+</html>
