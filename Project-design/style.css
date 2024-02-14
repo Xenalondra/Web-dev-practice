@@ -1,0 +1,252 @@
+html, body{
+margin: 0;
+-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+img {
+    border-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #212529;
+}
+
+div {
+    display: block;
+}
+
+.cc-cta-title,
+.cc-testimonial-title,
+.cc-title-title {
+    font-family: proxima-nova, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cc-cta-title,
+.cc-title-title {
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.33;
+    color: #000;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important;
+}
+
+.h3,
+h3 {
+    font-size: 1.96875rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+user agent stylesheet h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+/*==================END HEADER============================*/
+
+/*Yung white na box for the header*/
+.navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 37px 3rem;
+    border-bottom: 1px solid #e2e2e2;
+    justify-content: space-between; /*para even yung spaces*/
+}
+
+/*Box sa loob ng navbar*/
+.container {
+    width: 100%;
+    padding-right: 17.5px;
+    padding-left: 17.5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.head-container {
+    display: flex; /*flex items will try to fit in a single line*/
+    flex-direction: row; /*pag row align pahiga, column patayo*/
+    align-items: center; /*nakagitna yung contents horizontally*/
+    margin-right: 95px;
+    margin-left: 95px;
+}
+
+/*para sa logo or brand */
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.28906rem;
+    padding-bottom: 0.28906rem;
+    margin-right: 3rem;
+    font-size: 1.40625rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+/*Yung class para sa list*/
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.ml-auto {
+    margin-left: 220px;
+}
+
+/*Yung para sa box na pinaglagyan ng nav-item*/
+.collapse {
+    flex-grow: 1;
+    align-items: center;
+}
+
+/*Yung mismong link or text*/
+.nav-link {
+    display: block; /*Nilagay to para may saktong space between content and border*/
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 22px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.59px;
+    text-transform: uppercase;
+}
+
+/*Per button sa navigation*/
+.nav-item {
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+
+/*==================HOME BANNER============================*/
+
+.cc-home-banner {
+    background-size: cover !important;
+    background-position: 50% !important;
+    height: 740px;
+}
+
+.pb-5,
+.py-5 {
+    padding-bottom: 9rem !important;
+}
+
+.pt-5,
+.py-5 {
+    padding-top: 9rem !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+.jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+
+/*==================Main Content============================*/
+
+.mb-4, .my-4 {
+    margin-bottom: 4.5rem!important;
+}
+
+.mt-4, .my-4 {
+    margin-top: 4.5rem!important;
+}
+
+main {
+    display: block;
+}
+
+
+/*==================Title Block============================*/
+.cc-title-block {
+    margin-top: 115px;
+    margin-bottom: 115px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -17.5px;
+    margin-left: -17.5px;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}

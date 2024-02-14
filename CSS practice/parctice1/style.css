@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+    background-image: url(img/ccino.jpg);
+    background-size: cover; /*cover: size of the image*/
+}
+#box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: url(img/ccino1.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 0 50% 0 50%;
+    box-shadow: 2px 2px 5px #444444;
+    margin: 30px;
+    /*box shadow: x y blur color*/
+}
+
+#box2{
+    width: 200px;
+    height: 200px;
+    border: 2px dashed black;
+    padding: 10px; /*padding is inside the border*/
+    margin: 30px; /* top right bottom left */
+    display: inline-block;
+    /*margin: auto will centered*/
+}
+
+#inline {
+    display: inline;
+    border: 1px solid violet;
+    max-width: 600px;
+}
+
+#box3 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    /* opacity: 0.5; */
+}

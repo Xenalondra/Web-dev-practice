@@ -1,0 +1,13 @@
+img {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 5 black;
+}
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
