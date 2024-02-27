@@ -1,0 +1,82 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  padding: 20px;
+  width: auto;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.formContainer {
+  border: 1px solid red;
+  margin: auto;
+  display: flexbox;
+  width: 70%;
+  align-items: center;
+}
+
+form {
+  padding: 20px;
+}
+
+#firstName,
+#lastName,
+#midName,
+#course,
+#school,
+#email,
+#birthday,
+#password {
+  width: 250px;
+  height: 28px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+datalist {
+  width: 250px;
+  height: 28px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#noMiddle {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+
+label {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+fieldset {
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-container {
+  display: flexbox;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
